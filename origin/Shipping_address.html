@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Shipping Address</title>
+	<meta charset="utf-8">
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style_new_checkout.css">
+    <link href="https://fonts.googleapis.com/css?family=Exo+2:400,700,900&amp;subset=cyrillic" rel="stylesheet">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous" defer></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+</head>
+<body>
+	<div class="d-flex justify-content-between flex-column flex-lg-row m-0">
+		<div class="col-lg-7 col-12 d-flex flex-row align-items-stretch checkout_left_block">
+			<div class="checkout_logo">
+				<svg version="1.1"xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 223.3 208" xml:space="preserve">
+							<g>
+								<path d="M93.7,134.7H22V90.6h64.4c4.8,0,8.7-3.6,8.7-8.3c0-4.8-3.8-8.5-8.7-8.5H36.1H22c-11.3,0-18.4,2.7-18.4,15.2
+									v53.7c0,5,4,8.9,9.1,8.9h80.9c4.8,0,8.7-3.6,8.7-8.3C102.3,138.5,98.5,134.7,93.7,134.7L93.7,134.7z M22,29.9h14.1h57.6
+									c4.8,0,8.7-3.6,8.7-8.3c0-4.8-3.8-8.5-8.7-8.5H12.7c-5,0-9.1,4.2-9.1,9.1C3.7,31.9,16.1,30,22,29.9L22,29.9L22,29.9z"/>
+								<path d="M138.2,50.3c0-14.9,15.5-22.6,35.9-22.6c12.3,0,27,8.3,35.1,12.4c1,0.5,2.2,0.8,3.2,0.8c5,0,8.1-4.4,8.1-8.3
+									c0-4.8-2.9-6.7-5.6-7.9C205.2,20.2,192,11,172,11c-34.1,0-52.3,18.7-52.3,40.7c0,48.8,85.8,32.6,85.8,62
+									c0,17.3-15.3,22.8-35.3,22.8c-17.4,0-30-12.9-35.9-16.3c-1.3-0.8-2.6-0.8-3.8-0.8c-5,0-8.3,4-8.3,8.3c0,3.6,3,6.3,5.6,8.1
+									c10.1,7.3,24,17.7,44.2,17.7c31.3,0,51.7-16.3,51.7-38.7C223.7,62.4,138.2,84.7,138.2,50.3L138.2,50.3L138.2,50.3z"/>
+								<path d="M197.7,193.3c-0.6,0.2-1.2,0.3-1.8,0.4c-4,0.4-8.2-0.8-11.2-3.5c-1-0.9-2-2.3-2.6-3.5c1-0.1,2.4-0.5,3.4-0.7
+									c1.5-0.3,2.5-0.4,3.9-0.6c0.9-0.1,1.7-0.3,2.5-0.4c0.3-0.1,0.9-0.3,1.1-0.6c0.1-0.3-1.1-1.5-1.3-1.7c-0.8-0.9-1.7-1.9-2.7-3.1
+									c-0.5-0.5-1-0.9-1.4-1.6c6,0,12.1,4.9,13.3,10.7c0.1,0.3,0.1,0.7,0.1,1C201,191.5,199.6,192.7,197.7,193.3L197.7,193.3z
+									 M181.6,180.3c0.1-0.1,1.9-0.6,2.7-0.8c0.5-0.1,0.9-0.3,1.4-0.4c0.3-0.1,0.9-0.4,1.2-0.2c0.4,0.3,0.8,1,1.1,1.3
+									c0.4,0.5,0.8,1,1.2,1.6c0.5,0.7,1.5,1.6,1.5,2c0,0.4-3.9,0.9-5.9,1.2c-0.5,0.1-1.4,0.4-1.9,0.2c-0.2-0.1-0.3-0.8-0.4-1
+									c-0.2-0.5-0.3-1-0.5-1.5C181.9,182.2,181.1,180.8,181.6,180.3L181.6,180.3z M145.8,177.1c-1.3,5.8-7.4,10.7-13.3,10.7
+									c0.4-0.6,0.9-1,1.4-1.6c1.1-1.2,2-2.3,2.7-3.1c0.2-0.2,1.4-1.4,1.3-1.7c-0.1-0.3-0.8-0.5-1.1-0.6c-0.7-0.2-1.6-0.3-2.5-0.4
+									c-1.4-0.2-2.4-0.3-3.9-0.6c-1-0.2-2.4-0.5-3.4-0.7c0.6-1.2,1.6-2.7,2.6-3.6c3-2.7,7.2-3.9,11.2-3.5c0.6,0.1,1.2,0.2,1.8,0.4
+									c1.9,0.6,3.3,1.8,3.3,3.7C145.9,176.4,145.9,176.8,145.8,177.1L145.8,177.1z M131.7,186.9c-0.3,0.2-0.9-0.1-1.2-0.2
+									c-0.5-0.1-0.9-0.3-1.4-0.4c-0.7-0.2-2.5-0.7-2.7-0.8c-0.5-0.5,0.3-1.9,0.5-2.4c0.2-0.5,0.3-1,0.5-1.5c0.1-0.2,0.1-0.9,0.4-1
+									c0.5-0.2,1.4,0.2,1.9,0.2c2,0.3,5.9,0.8,5.9,1.2c0,0.4-1,1.3-1.5,2c-0.4,0.5-0.8,1-1.2,1.6C132.5,185.9,132.1,186.6,131.7,186.9
+									L131.7,186.9z M88.6,193.3c-0.6,0.2-1.2,0.3-1.8,0.4c-4,0.4-8.2-0.8-11.2-3.5c-1-0.9-2-2.3-2.6-3.5c1-0.1,2.4-0.5,3.4-0.7
+									c1.5-0.3,2.5-0.4,3.9-0.6c0.9-0.1,1.7-0.3,2.5-0.4c0.3-0.1,0.9-0.3,1.1-0.6c0.2-0.3-1.1-1.5-1.3-1.7c-0.8-0.9-1.7-1.9-2.7-3.1
+									c-0.5-0.5-1-0.9-1.4-1.6c6,0,12.1,4.9,13.3,10.7c0.1,0.3,0.1,0.7,0.1,1C91.9,191.5,90.5,192.7,88.6,193.3L88.6,193.3z M72.5,180.3
+									c0.1-0.1,1.9-0.6,2.7-0.8c0.5-0.1,0.9-0.3,1.4-0.4c0.3-0.1,0.9-0.4,1.2-0.2c0.4,0.3,0.8,1,1.1,1.3c0.4,0.5,0.8,1,1.2,1.6
+									c0.5,0.7,1.5,1.6,1.5,2c0,0.4-3.9,0.9-5.9,1.2c-0.5,0.1-1.4,0.4-1.9,0.2c-0.2-0.1-0.3-0.8-0.4-1c-0.2-0.5-0.3-1-0.5-1.5
+									C72.8,182.2,72,180.8,72.5,180.3L72.5,180.3z M36.7,177.1c-1.3,5.8-7.4,10.7-13.3,10.7c0.4-0.6,0.9-1,1.4-1.6
+									c1.1-1.2,2-2.3,2.7-3.1c0.2-0.2,1.4-1.4,1.3-1.7c-0.1-0.3-0.8-0.5-1.1-0.6c-0.7-0.2-1.6-0.3-2.5-0.4c-1.4-0.2-2.4-0.3-3.9-0.6
+									c-1-0.2-2.4-0.5-3.4-0.7c0.6-1.2,1.6-2.7,2.6-3.6c3-2.7,7.2-3.9,11.2-3.5c0.6,0.1,1.2,0.2,1.8,0.4c1.9,0.6,3.3,1.8,3.3,3.7
+									C36.8,176.4,36.8,176.8,36.7,177.1L36.7,177.1z M22.6,186.9c-0.3,0.2-0.9-0.1-1.2-0.2c-0.5-0.1-0.9-0.3-1.4-0.4
+									c-0.7-0.2-2.5-0.7-2.7-0.8c-0.5-0.5,0.3-1.9,0.5-2.4c0.2-0.5,0.3-1,0.5-1.5c0.1-0.2,0.1-0.9,0.4-1c0.5-0.2,1.4,0.2,1.9,0.2
+									c2,0.3,5.9,0.8,5.9,1.2c0,0.4-1,1.3-1.5,2c-0.4,0.5-0.8,1-1.2,1.6C23.4,185.9,23,186.6,22.6,186.9L22.6,186.9z M221.6,182.1
+									c-0.1,0.1-7.4,7.6-18.2,10.8c0,0,0.1-0.1,0.1-0.1c0.5-0.5,0.3-1.4,0.3-2c-0.1-0.8-0.2-1.6-0.4-2.4c-0.2-0.8-0.5-1.5-0.9-2.2
+									c-0.5-1.2-1.2-2.3-1.9-3.4c-1.5-2.1-3.5-3.9-5.8-5.1c-2.2-1.1-4.9-1.8-7.4-1.9c-0.4,0-1.6-0.1-2.4,0.2c-0.5,0-1.1,0.1-1.6,0.2
+									c-0.6,0.1-1.2,0.2-1.7,0.3c-1.2,0.1-2.5-0.3-3.6-0.6c-0.5-0.2-0.9-0.4-1.3-0.6c-0.4-0.2-0.9-0.5-1.1-0.9c-0.2-0.2-0.3-0.5-0.5-0.9
+									c0-0.1-0.2-0.8-0.4-0.6c-0.2,0.2-0.3,0.6-0.3,0.9c0,0.3,0.1,0.7,0.3,1c0.1,0.3,0.2,0.5,0.4,0.7c0.7,0.7,1.7,1.2,2.6,1.5
+									c1.2,0.4,2.6,0.8,4,0.7c0.6,0,1.3-0.2,1.9-0.3c0.2,0,1.4-0.2,1.6-0.3c0.2,0.1,0.7,0.6,0.8,0.7c-4,0.8-6.1,1.9-5.8,3.1
+									c0,0.1,0.5,2.3,1.4,4.8c-0.4,0.2-0.7,0.1-0.9,0.2c0-0.1-0.5-1.1-0.6-1.2c-0.9-2.4-1.9-4.9-4-6.8c-0.6-0.5-2-1.8-4.4-2.5
+									c-2.6-0.7-4.8-0.2-6.3,0.1c-0.6,0.1-0.7,0.6-0.4,0.7c0.7,0.1,1.1,0,1.4-0.1c1.4-0.3,2.6-0.3,4.9,0.3c2.1,0.6,3.4,1.8,4,2.3
+									c1.9,1.7,2.7,4,3.7,6.4c0.2,0.4,1.2,2.7,1.6,3.3c0.8,1.3,1.7,2.4,2.8,3.4c0.5,0.5,1,0.9,1.5,1.3c-6.2-1.8-12.1-5.4-17.7-11
+									c-9-9-18.6-13.3-28.5-13c-15.4,0.6-25.9,12.6-26.3,13.1c-0.1,0.1,0,0.1-0.1,0.2c-0.9,0.9-8,7.7-18.3,10.7c0.1-0.1,0.3-0.2,0.4-0.3
+									c0.5-0.5,0.3-1.4,0.3-2c-0.1-0.8-0.2-1.6-0.5-2.4c-0.2-0.8-0.5-1.5-0.9-2.2c-0.5-1.2-1.2-2.3-1.9-3.4c-1.5-2.1-3.5-3.9-5.8-5.1
+									c-2.2-1.1-4.9-1.8-7.4-1.9c-0.4,0-1.6-0.1-2.4,0.2c-0.5,0-1.1,0.1-1.6,0.2c-0.6,0.1-1.2,0.2-1.7,0.3c-1.2,0.1-2.5-0.3-3.6-0.6
+									c-0.5-0.2-0.9-0.4-1.3-0.6c-0.4-0.2-0.9-0.5-1.1-0.9c-0.2-0.2-0.3-0.5-0.5-0.9c0-0.1-0.2-0.8-0.4-0.6c-0.2,0.2-0.3,0.6-0.3,0.9
+									c0,0.3,0.1,0.7,0.3,1c0.1,0.3,0.2,0.5,0.4,0.7c0.7,0.7,1.7,1.2,2.6,1.5c1.2,0.4,2.6,0.8,4,0.7c0.6,0,1.3-0.2,1.9-0.3
+									c0.2,0,1.4-0.2,1.6-0.3c0.2,0.1,0.7,0.6,0.8,0.7c-4,0.8-6.1,1.9-5.8,3.1c0,0.1,0.5,2.3,1.4,4.8c-0.4,0.2-0.7,0.1-0.9,0.2
+									c0-0.1-0.5-1.1-0.6-1.2c-0.9-2.4-1.9-4.9-4-6.8c-0.6-0.5-2-1.8-4.4-2.5c-2.6-0.7-4.8-0.2-6.3,0.1c-0.6,0.1-0.7,0.6-0.4,0.7
+									c0.7,0.1,1.1,0,1.4-0.1c1.4-0.3,2.6-0.3,4.9,0.3c2.1,0.6,3.4,1.8,4,2.3c1.9,1.7,2.7,4,3.7,6.4c0.2,0.4,1.2,2.7,1.6,3.3
+									c0.8,1.3,1.7,2.4,2.8,3.4c0.5,0.5,1,0.9,1.6,1.4c0.1,0,0.1,0.1,0.2,0.1c-6.3-1.8-12.3-5.4-18-11.1c-9-9-18.6-13.6-28.5-13
+									c-5.6,0.3-8.6,2.8-10.2,4.5c-0.1,0.1-0.2,0.1-0.2,0.2c-1.1,1-2,2.2-2.8,3.4c-0.4,0.6-1.4,2.9-1.6,3.3c-0.9,2.4-1.8,4.7-3.7,6.4
+									c-0.6,0.5-1.8,1.7-4,2.3c-2.3,0.7-3.5,0.6-4.9,0.3c-0.3-0.1-0.8-0.2-1.4-0.1c-0.1,0-0.2,0.1-0.2,0.2v0c0,0.2,0.2,0.4,0.5,0.5
+									c1.5,0.3,3.7,0.9,6.3,0.1c2.4-0.7,3.8-2,4.4-2.5c2.1-1.9,3-4.4,4-6.8c0-0.1,0.5-1.1,0.6-1.2c0.2,0,0.5,0,0.9,0.2
+									c-0.9,2.5-1.4,4.7-1.4,4.8c-0.3,1.2,1.8,2.3,5.8,3.1c-0.1,0.2-0.6,0.6-0.8,0.7c-0.2,0-1.4-0.2-1.6-0.3c-0.6-0.1-1.2-0.2-1.9-0.3
+									c-1.4-0.1-2.8,0.3-4,0.7c-0.9,0.3-1.9,0.8-2.6,1.5c-0.2,0.2-0.3,0.4-0.4,0.7c-0.1,0.3-0.2,0.6-0.3,1c0,0.3,0,0.7,0.3,0.9
+									c0.2,0.2,0.4-0.5,0.4-0.6c0.2-0.4,0.3-0.7,0.5-0.9c0.3-0.4,0.8-0.7,1.1-0.9c0.4-0.3,0.9-0.5,1.3-0.6c1.1-0.3,2.4-0.7,3.6-0.6
+									c0.5,0,1.1,0.1,1.7,0.3c0.5,0.1,1.1,0.2,1.6,0.2c0.8,0.2,2,0.2,2.4,0.2c2.5,0,5.2-0.7,7.4-1.9c2.3-1.2,4.3-3,5.8-5.1
+									c0.8-1.1,1.4-2.2,1.9-3.4c0.3-0.7,0.6-1.4,0.9-2.2c0.2-0.8,0.4-1.6,0.4-2.4c0.1-0.6,0.2-1.5-0.3-2c-0.1-0.1-0.3-0.3-0.5-0.4
+									c6.1,1.7,12,5.4,17.8,11.2c8.7,8.6,18.1,13,28,13c0.1,0,0.2,0,0.4,0c15.8-0.2,27.3-11.1,29-12.8c0.1-0.1,0.3-0.1,0.3-0.2
+									c0.1-0.1,5.5-6.2,13.9-9.7c-1,1-2,2.1-2.7,3.4c-0.4,0.6-1.4,2.9-1.6,3.3c-0.9,2.4-1.8,4.7-3.7,6.4c-0.6,0.5-1.8,1.7-4,2.3
+									c-2.3,0.7-3.5,0.6-4.9,0.3c-0.3-0.1-0.8-0.2-1.4-0.1c-0.3,0.1-0.2,0.6,0.4,0.7c1.5,0.3,3.7,0.9,6.3,0.1c2.4-0.7,3.8-2,4.4-2.5
+									c2.1-1.9,3-4.4,4-6.8c0-0.1,0.5-1.1,0.6-1.2c0.2,0,0.5,0,0.9,0.2c-0.9,2.5-1.4,4.7-1.4,4.8c-0.3,1.2,1.8,2.3,5.8,3.1
+									c-0.1,0.2-0.6,0.6-0.8,0.7c-0.2,0-1.4-0.2-1.6-0.3c-0.6-0.1-1.2-0.2-1.9-0.3c-1.4-0.1-2.8,0.3-4,0.7c-0.9,0.3-1.9,0.8-2.6,1.5
+									c-0.2,0.2-0.3,0.4-0.4,0.7c-0.1,0.3-0.2,0.6-0.3,1c0,0.3,0,0.7,0.3,0.9c0.2,0.2,0.4-0.5,0.4-0.6c0.2-0.4,0.3-0.7,0.5-0.9
+									c0.3-0.4,0.8-0.7,1.1-0.9c0.4-0.3,0.9-0.5,1.3-0.6c1.1-0.3,2.4-0.7,3.6-0.6c0.5,0,1.1,0.1,1.7,0.3c0.5,0.1,1.1,0.2,1.6,0.2
+									c0.8,0.2,2,0.2,2.4,0.2c2.5,0,5.2-0.7,7.4-1.9c2.3-1.2,4.3-3,5.8-5.1c0.8-1.1,1.4-2.2,1.9-3.4c0.3-0.7,0.6-1.4,0.9-2.2
+									c0.2-0.8,0.4-1.6,0.4-2.4c0.1-0.6,0.2-1.5-0.3-2c-0.1-0.1-0.2-0.2-0.3-0.3c6,1.8,11.9,5.5,17.5,11.1c8.7,8.6,18.1,13,28.1,13
+									c0.1,0,0.2,0,0.4,0c16.7-0.2,28.8-12.5,29.3-13c0.5-0.5,0.5-1.3,0-1.7C222.8,181.6,222.1,181.6,221.6,182.1L221.6,182.1z"/>
+								<path d="M160.6,181.1l-0.4-0.3c-0.6-0.5-3.2-3.8-6.7-3.2c1.1,1.4,2.2,2.5,3,3.1c-2.7-0.4-7.4-0.9-10.3,3.9
+									c4.6,1.2,9.1-1.5,9.7-1.3c-5.8,4.7-8.4,9.3-7.8,12c3-0.8,7.4-3.6,10.6-9.8c0,0-0.9,6.1,1,9.6c1.4-1.4,3.5-6.2,1.4-11.2
+									c0.9,1,2.5,2.2,3.7,2.7C165.3,184.1,161.5,181.8,160.6,181.1L160.6,181.1z"/>
+								<path d="M51.6,181.1l-0.4-0.3c-0.6-0.5-3.2-3.8-6.7-3.2c1.1,1.4,2.2,2.5,3,3.1c-2.7-0.4-7.4-0.9-10.3,3.9
+									c4.6,1.2,9.1-1.5,9.7-1.3c-5.8,4.7-8.4,9.3-7.8,12c3-0.8,7.4-3.6,10.6-9.8c0,0-0.9,6.1,1,9.6c1.4-1.4,3.5-6.2,1.4-11.2
+									c0.9,1,2.5,2.2,3.7,2.7C56.4,184.1,52.5,181.8,51.6,181.1L51.6,181.1z"/>
+								<path d="M105.3,186.4l-0.4,0.3c-0.6,0.4-3.6,3.4-7.1,2.3c1.3-1.3,2.5-2.2,3.3-2.7c-2.8,0.1-7.4,0-9.7-5.1
+									c4.7-0.7,8.9,2.6,9.4,2.4c-5.2-5.3-7.3-10.2-6.3-12.9c2.8,1.2,6.9,4.4,9.3,11c0,0-0.2-6.1,2.1-9.4c1.2,1.5,2.7,6.6,0.1,11.3
+									c1-0.9,2.8-1.9,4-2.3C110.4,184,106.3,185.8,105.3,186.4L105.3,186.4z"/>
+								<path d="M214.6,186.4l-0.4,0.3c-0.6,0.4-3.6,3.4-7.1,2.3c1.3-1.3,2.5-2.2,3.3-2.7c-2.8,0.1-7.4,0-9.7-5.1
+									c4.7-0.7,8.9,2.6,9.4,2.4c-5.2-5.3-7.3-10.2-6.3-12.9c2.8,1.2,6.9,4.4,9.3,11c0,0-0.2-6.1,2.1-9.4c1.2,1.5,2.7,6.6,0.1,11.3
+									c1-0.9,2.8-1.9,4-2.3C219.7,184,215.6,185.8,214.6,186.4L214.6,186.4z"/>
+							</g>
+							</svg>
+			</div>
+			<div class="d-flex flex-column checkout_center">
+				<div class="checkout_top d-flex flex-row justify-content-between align-items-start">			
+					<div class="checkout_head w-100">
+						<div class="checkout_title">
+							<h1>Оформление заказа</h1>
+						</div>
+						<div class="checkout_step d-md-flex flex-row align-items-center mt-4 mb-5 flex-wrap d-none">
+							<span class="label_step done">Информация о клиенте</span>						
+							<span class="label_step done">Доставка и упаковка</span>
+							<span class="label_step active">Адрес доставки</span>
+							<span class="label_step">Оплата</span>
+							<span class="label_step">Подтверждение заказа</span>
+						</div>
+					</div>				
+				</div>
+				<div class="checkout_content" id="checkout_content">
+					<div class="d-flex justify-content-sm-between flex-column flex-sm-row checkout_content_top align-items-sm-end">
+						<h2>Информация для доставки</h2>						
+					</div>
+					<form class="mt-5 d-flex w-100 flex-column" id="shipping_address">	
+						
+					<!-- для авторизированных -->					
+							<div class="input-group d-flex flex-row flex-wrap">
+								<label class="w-100">
+									Ваш адрес
+									<select class="custom-select" id="shipping">
+									    <option selected>Сумская улица, 35, Харьков, Харьковская область, Харьковский зоопарк</option>
+									    <option value="1">вулиця Академіка Павлова, 46, Харків, Харьковская областная психиатрическая больница № 3</option>
+									    <option value="2">вулиця Пушкінська, Харків, Харківська область, Кладбище №13</option>
+									    <option value="3">вулиця Добродецького, 48, Харків, Харківська область, 61000, Кладбище №8</option>
+									 </select>
+								</label>								
+							</div>														
+							<div class="with_register ">							
+								<input type="checkbox" name="register_check" id="register_check" class="checkout_checkbox">
+								<label for="register_check" class="for_checkbox">Добавить новый адрес</label>
+								<div class="form_register d-flex flex-wrap mt-3 justify-content-between">
+								<h3>Получатель:</h3>
+								<div class="d-flex flex-wrap flex-row w-100">
+									<label>
+										Имя
+										<input type="text" name="name" class="form-control" id="name" minlength="2" maxlength="32">
+										<span class="label_error">Имя должна быть от 2 до 32 символов!</span>
+									</label>
+									<label>
+										Фамилия
+										<input type="text" name="lastname" class="form-control" id="last_name" minlength="2" maxlength="32">
+										<span class="label_error">Фамилия должна быть от 2 до 32 символов!</span>
+									</label>
+									<label>
+										Отчество
+										<input type="text" name="middle_name" class="form-control" id="middle_name" minlength="6" maxlength="32">
+										<span class="label_error">Отчество должно быть от 6 до 32 символов!</span>
+									</label>
+								</div>											
+								<h3>Адрес доставки:</h3>
+								<div class="d-flex flex-wrap flex-row w-100">	
+									<label>
+										Страна
+										<select class="custom-select" id="shipping">
+										    <option selected>Страна</option>
+										    <option value="1">Страна</option>
+										    <option value="2">Страна</option>
+										    <option value="3">Страна</option>
+										 </select>
+									</label>
+									<label>
+										Область
+										<select class="custom-select" id="shipping">
+										    <option selected>Область</option>
+										    <option value="1">Область</option>
+										    <option value="2">Область</option>
+										    <option value="3">Область</option>
+										 </select>
+									</label>
+									<label>
+										Город
+										<input type="text" name="middle_name" class="form-control" id="middle_name" minlength="6" maxlength="32">
+									</label>
+									<label>
+										Индекс
+										<input type="number" name="middle_name" class="form-control" id="middle_name" minlength="4" maxlength="7">
+									</label>
+								</div>							
+							</div>
+							<!-- для не авторизированных -->
+							<!-- <div class="d-flex flex-wrap mt-3 justify-content-between">
+								
+								<h3>Получатель:</h3>
+								<div class="d-flex flex-wrap flex-row w-100">
+									<label>
+										Имя
+										<input type="text" name="name" class="form-control" id="name" minlength="2" maxlength="32">
+										<span class="label_error">Имя должна быть от 2 до 32 символов!</span>
+									</label>
+									<label>
+										Фамилия
+										<input type="text" name="lastname" class="form-control" id="last_name" minlength="2" maxlength="32">
+										<span class="label_error">Фамилия должна быть от 2 до 32 символов!</span>
+									</label>
+									<label>
+										Отчество
+										<input type="text" name="middle_name" class="form-control" id="middle_name" minlength="6" maxlength="32">
+										<span class="label_error">Отчество должно быть от 6 до 32 символов!</span>
+									</label>
+								</div>											
+								<h3>Адрес доставки:</h3>
+								<div class="d-flex flex-wrap flex-row w-100">	
+									<label>
+										Страна
+										<select class="custom-select" id="shipping">
+										    <option selected>Страна</option>
+										    <option value="1">Страна</option>
+										    <option value="2">Страна</option>
+										    <option value="3">Страна</option>
+										 </select>
+									</label>
+									<label>
+										Область
+										<select class="custom-select" id="shipping">
+										    <option selected>Область</option>
+										    <option value="1">Область</option>
+										    <option value="2">Область</option>
+										    <option value="3">Область</option>
+										 </select>
+									</label>
+									<label>
+										Город
+										<input type="text" name="middle_name" class="form-control" id="middle_name" minlength="6" maxlength="32">
+									</label>
+									<label>
+										Индекс
+										<input type="number" name="middle_name" class="form-control" id="middle_name" minlength="4" maxlength="7">
+									</label>
+								</div>
+							</div> -->
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="checkout_right_block col-lg-5 col-12 flex-column d-flex justify-content-between">
+			<div>
+				<div class="checkout_prod_title d-flex justify-content-between align-items-center">
+					<p class="title">Товары</p>
+					<a href="#" class="back text-right">Вернуться в магазин</a>				
+				</div>
+				<div class="cash_on_dilivery">
+						Наложеный платеж возможен при сумме заказа от 250.00 грн
+					</div>
+				<div class="checkout_prod_block">
+					<div class="checkout_product_item d-flex justify-content-between flex-row">
+						<div class="">
+							<img src="img/Screenshot_1.png" alt="" title="" class="checkout_prod_img">
+						</div>
+						<div class="d-flex flex-column w-100 ml-3">
+							<div class="d-flex flex-row justify-content-between">
+								<div class="product_name w-75">Critical Super Silver Haze Feminised Gold</div>
+								<div class="product_price">41 грн</div>
+							</div>
+							<div class="d-flex flex-row justify-content-sm-between justify-content-start mt-2 flex-wrap">
+								<div class="product_option d-flex flex-column">
+									<span>Количество в пачке:</span>
+									<span>1 - в упаковке</span>
+								</div>
+								<div class="product_quantity d-flex flex-wrap flex-row align-items-center justify-content-sm-end justify-content-start">
+									<span>Количество</span>
+									<form id="quantity" class="d-flex align-items-center flex-row ml-2">
+										<input class="minus" value="-" type="button">
+										<input type="numder" id="count" value="1">
+										<input class="plus" value="+" type="button">
+										<noscript>
+											<form class="d-flex flex-column" id="refresh_quantity">
+												<input type="hidden" name="product_id" value="">
+												<button id="refresh">Обновить</button>			
+											</form>											
+										</noscript>								
+									</form>
+								</div>
+								<div class="d-flex align-items-center justify-content-end delete_block">
+									<form class="d-flex flex-column" id="product_delete_button">
+										<input type="hidden" name="product_id" value="">
+										<button id="product_delete" class="product_delete">Удалить товар</button>			
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="checkout_product_item d-flex justify-content-between flex-row">
+						<div class="">
+							<img src="img/Screenshot_2.png" alt="" title="" class="checkout_prod_img">
+						</div>
+						<div class="d-flex flex-column w-100 ml-3">
+							<div class="d-flex flex-row justify-content-between">
+								<div class="product_name w-75">AK47 Feminised Gold</div>
+								<div class="product_price">30 грн</div>
+							</div>
+							<div class="d-flex flex-row justify-content-sm-between justify-content-start mt-2 flex-wrap">
+								<div class="product_option d-flex flex-column">
+									<span>Количество в пачке:</span>
+									<span>5 - в упаковке</span>
+								</div>
+								<div class="product_quantity d-flex flex-wrap flex-row align-items-center justify-content-sm-end justify-content-start">
+									<span>Количество</span>
+									<form id="quantity" class="d-flex align-items-center flex-row ml-2">
+										<input class="minus" value="-" type="button">
+										<input type="numder" id="count" value="1">
+										<input class="plus" value="+" type="button">
+										<noscript>
+											<form class="d-flex flex-column" id="refresh_quantity">
+												<input type="hidden" name="product_id" value="">
+												<button id="refresh">Обновить</button>			
+											</form>											
+										</noscript>								
+									</form>
+								</div>
+								<div class="d-flex align-items-center justify-content-end delete_block">						
+									<form class="d-flex flex-column" id="product_delete_button">
+										<input type="hidden" name="product_id" value="">
+										<button id="product_delete" class="product_delete">Удалить товар</button>			
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="checkout_product_item d-flex justify-content-between flex-row">
+						<div class="">
+							<img src="img/Screenshot_1.png" alt="" title="" class="checkout_prod_img">
+						</div>
+						<div class="d-flex flex-column w-100 ml-3">
+							<div class="d-flex flex-row justify-content-between">
+								<div class="product_name w-75">Afghani№1 Feminised Gold</div>
+								<div class="product_price">1000 грн</div>
+							</div>
+							<div class="d-flex flex-row justify-content-sm-between justify-content-start mt-2 flex-wrap">
+								<div class="product_option d-flex flex-column">
+									<span>Количество в пачке:</span>
+									<span>5 - в упаковке</span>
+								</div>
+								<div class="product_quantity d-flex flex-wrap flex-row align-items-center justify-content-sm-end justify-content-start">
+									<span>Количество</span>
+									<form id="quantity" class="d-flex align-items-center flex-row ml-2">
+										<input class="minus" value="-" type="button">
+										<input type="numder" id="count" value="1">
+										<input class="plus" value="+" type="button">
+										<noscript>
+											<form class="d-flex flex-column" id="refresh_quantity">
+												<input type="hidden" name="product_id" value="">
+												<button id="refresh">Обновить</button>			
+											</form>											
+										</noscript>								
+									</form>
+								</div>
+								<div class="d-flex align-items-center justify-content-end delete_block">
+									<form class="d-flex flex-column" id="product_delete_button">
+										<input type="hidden" name="product_id" value="">
+										<button id="product_delete" class="product_delete">Удалить товар</button>			
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="checkout_product_item d-flex justify-content-between flex-row">
+						<div class="">
+							<img src="img/Screenshot_3.png" alt="" title="" class="checkout_prod_img">
+						</div>
+						<div class="d-flex flex-column w-100 ml-3">
+							<div class="d-flex flex-row justify-content-between">
+								<div class="product_name w-75">Футболка Errors Seeds</div>
+								<div class="product_price">150 грн</div>
+							</div>
+							<div class="d-flex flex-row justify-content-sm-between justify-content-start mt-2 flex-wrap">
+								<div class="product_option d-flex flex-column">
+									<span>Размер:</span>
+									<span>М</span>
+									<span>Цвет:</span>
+									<span>Черный</span>
+								</div>
+								<div class="product_quantity d-flex flex-wrap flex-row align-items-center justify-content-sm-end justify-content-start">
+									<span>Количество</span>
+									<form id="quantity" class="d-flex align-items-center flex-row ml-2">
+										<input class="minus" value="-" type="button">
+										<input type="numder" id="count" value="1">
+										<input class="plus" value="+" type="button">
+										<noscript>
+											<form class="d-flex flex-column" id="refresh_quantity">
+												<input type="hidden" name="product_id" value="">
+												<button id="refresh">Обновить</button>			
+											</form>											
+										</noscript>								
+									</form>
+								</div>
+								<div class="d-flex align-items-center justify-content-end delete_block">
+									<form class="d-flex flex-column" id="product_delete_button">
+										<input type="hidden" name="product_id" value="">
+										<button id="product_delete" class="product_delete">Удалить товар</button>			
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="checkout_prices d-flex flex-column">
+					<div class="d-flex flex-row justify-content-between">
+						<span class="price_text">Сумма:</span>
+						<span class="price">1000 грн</span></div>
+					<div class="d-flex flex-row justify-content-between">
+						<span class="price_text">Стелс-упаковка:</span>
+						<span class="price">30 грн
+							<form class="d-flex flex-column" id="packaging_delete_button">
+								<input type="hidden" name="product_id" value="">
+								<button id="packaging_delete" class="packaging_delete"><i class="fas fa-trash-alt"></i></button>
+							</form>
+						</span>
+					</div>
+					<div class="d-flex flex-row justify-content-between">
+						<span class="price_text">Новая почта:</span>
+						<span class="price">100 грн</span>
+					</div>
+					<div class="d-flex flex-row justify-content-between">
+						<span class="price_text">Скидка:</span>
+						<span class="price">200 грн</span>
+					</div>
+				</div>
+				<div class="checkout_total_price">
+					<div class="d-flex flex-row justify-content-between">
+						<span class="price_text">Итого:</span>
+						<span class="price">100500 грн</span>
+					</div>
+				</div>
+			</div>
+			<div class="checkout_buttons d-flex flex-row justify-content-between align-items-end">
+				<div class="button_step_back"><a href="#">Назад</a></div>
+				<div class="d-flex justify-content-end button_step_forward"><button type="submit" form="shipping_address">Оплата</button></div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
